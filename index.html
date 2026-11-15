@@ -34,6 +34,12 @@
   ul.products a{display:block;padding:14px 0;text-decoration:none;color:var(--ink)}
   ul.products b{display:block;font-weight:600;color:var(--green)}
   ul.products span{color:var(--grey);font-size:15px}
+  .cards{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+  .cards a.card{margin-top:0}
+  a.card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+  a.card img.top{object-position:top}
+  ul.products i{font-style:normal;font-weight:400;color:var(--grey);margin-left:6px}
+  @media (min-width:640px){.cards{grid-template-columns:1fr 1fr}}
   footer{margin:48px 0 0;padding:28px 0 40px;text-align:center}
   footer hr{width:60px;border:0;border-top:2px solid var(--sage);margin:0 auto 18px}
   footer .name{font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-size:14px}
@@ -51,24 +57,65 @@
   </header>
 
   <main>
-    <h2>Free recipes</h2>
-    <a class="card" href="glp1-overnight-oats/">
-      <img src="glp1-overnight-oats/img/protein-overnight-oats.jpg" width="1200" height="800"
-           alt="Two glass jars of protein overnight oats topped with berries.">
-      <div class="txt">
-        <p class="kicker">GLP-1 breakfast</p>
-        <h3>Protein Overnight Oats for GLP-1</h3>
-        <p>32 g protein and 371 calories a jar</p>
-      </div>
-    </a>
+    <h2>Free recipes and printables</h2>
+    <div class="cards">
+      <a class="card" href="herb-roasted-turkey-breast/">
+        <img src="herb-roasted-turkey-breast/img/herb-roasted-turkey-breast.jpg" alt="Herb-Roasted Turkey Breast" loading="lazy">
+        <div class="txt">
+          <p class="kicker">Thanksgiving and Christmas</p>
+          <h3>Herb-Roasted Turkey Breast</h3>
+          <p>41 g protein and 233 calories a serving</p>
+        </div>
+      </a>
+      <a class="card" href="glp1-overnight-oats/">
+        <img src="glp1-overnight-oats/img/protein-overnight-oats.jpg" alt="Protein Overnight Oats for GLP-1" loading="lazy">
+        <div class="txt">
+          <p class="kicker">GLP-1 breakfast</p>
+          <h3>Protein Overnight Oats for GLP-1</h3>
+          <p>32 g protein and 371 calories a jar</p>
+        </div>
+      </a>
+      <a class="card" href="what-to-eat-on-shot-day/">
+        <img class="top" src="what-to-eat-on-shot-day/img/what-to-eat-on-shot-day-page.jpg" alt="What to Eat on Shot Day" loading="lazy">
+        <div class="txt">
+          <p class="kicker">Free printable</p>
+          <h3>What to Eat on Shot Day</h3>
+          <p>A GLP-1 cheat sheet with a queasy-day menu</p>
+        </div>
+      </a>
+      <a class="card" href="white-chicken-chili/">
+        <img src="white-chicken-chili/img/white-chicken-chili.jpg" alt="White Chicken Chili" loading="lazy">
+        <div class="txt">
+          <p class="kicker">High-protein soup</p>
+          <h3>White Chicken Chili</h3>
+          <p>42 g protein and 395 calories a bowl</p>
+        </div>
+      </a>
+      <a class="card" href="hunger-scale/">
+        <img class="top" src="hunger-scale/img/hunger-fullness-scale-page.jpg" alt="Hunger and Fullness Scale, 1 to 10" loading="lazy">
+        <div class="txt">
+          <p class="kicker">Free printable</p>
+          <h3>Hunger and Fullness Scale, 1 to 10</h3>
+          <p>One page to print, with a food noise scale</p>
+        </div>
+      </a>
+      <a class="card" href="adhd-cleaning-schedule/">
+        <img class="top" src="adhd-cleaning-schedule/img/adhd-cleaning-week-page.jpg" alt="ADHD Cleaning Schedule: One Zone a Day" loading="lazy">
+        <div class="txt">
+          <p class="kicker">Free printable</p>
+          <h3>ADHD Cleaning Schedule: One Zone a Day</h3>
+          <p>One page to print: a zone for every day</p>
+        </div>
+      </a>
+    </div>
 
     <h2>Printable PDFs</h2>
     <ul class="products">
-      <li><a href="https://app.lava.top/products/09b6b3e7-d329-433e-883f-69d2c2f27dcd"><b>GLP-1 Recipe Cards and Meal Plan</b><span>40 small high-protein meals, a 7-day menu and a grocery list</span></a></li>
-      <li><a href="https://app.lava.top/products/b2d84e80-8d80-4c65-bba7-0356872adf7b"><b>GLP-1 Food, Protein &amp; Mindful Eating Journal</b><span>12 weeks of daily pages, weekly reviews and a hunger scale</span></a></li>
-      <li><a href="https://app.lava.top/products/21bba15d-71af-4745-9697-c02242a18572"><b>90 High Protein Recipe Cards</b><span>Calories and macros on every card</span></a></li>
-      <li><a href="https://app.lava.top/products/7ec49659-a956-4b24-874a-c2a12be549dd"><b>ADHD Home &amp; Food Reset</b><span>A cleaning and meal planner built around your energy level</span></a></li>
-      <li><a href="https://app.lava.top/products/1c1dffe7-2b42-4432-ac3b-64e45a36e3ca"><b>Christmas Dinner Menu &amp; Cookies</b><span>Three menus, shopping lists, a prep plan and 30 lighter recipes</span></a></li>
+      <li><a href="https://app.lava.top/products/09b6b3e7-d329-433e-883f-69d2c2f27dcd"><b>GLP-1 Recipe Cards and Meal Plan <i>$11.99</i></b><span>40 small high-protein meals, a 7-day menu and a grocery list</span></a></li>
+      <li><a href="https://app.lava.top/products/b2d84e80-8d80-4c65-bba7-0356872adf7b"><b>GLP-1 Food, Protein &amp; Mindful Eating Journal <i>$6.99</i></b><span>12 weeks of daily pages, weekly reviews and a hunger scale</span></a></li>
+      <li><a href="https://app.lava.top/products/21bba15d-71af-4745-9697-c02242a18572"><b>90 High Protein Recipe Cards <i>$14.99</i></b><span>Calories and macros on every card</span></a></li>
+      <li><a href="https://app.lava.top/products/7ec49659-a956-4b24-874a-c2a12be549dd"><b>ADHD Home &amp; Food Reset <i>$9.99</i></b><span>A cleaning and meal planner built around your energy level</span></a></li>
+      <li><a href="https://app.lava.top/products/1c1dffe7-2b42-4432-ac3b-64e45a36e3ca"><b>Christmas Dinner Menu &amp; Cookies <i>$9.99</i></b><span>Three menus, shopping lists, a prep plan and 30 lighter recipes</span></a></li>
     </ul>
   </main>
 
